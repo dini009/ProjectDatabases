@@ -5,19 +5,19 @@ from tkinter import *
 import tkinter.messagebox
 
 
-class Student:
+class Application:
 
     def __init__(self, root):
         self.root = root
-        self.root.title("Student Database Management System")
-        self.root.geometry("1350x7500+0+0")
-        self.root.config(bg = "cadet blue")
+        self.root.title("")
+        self.root.geometry("1350x750+0+0")
+        self.root.config(bg = "#0000ff")
 
       
 
         
 
-        student_ID = StringVar()
+        StdID = StringVar()
         Firstname = StringVar()
         Surname = StringVar()
         DoB = StringVar()
@@ -40,9 +40,10 @@ class Student:
 
 
     
-    if __name__ == '__main__':
-        root = Tk()
-        root.mainloop()
+root = Tk()
+app= Application(root)
+root.mainloop()
+
     
 
     
